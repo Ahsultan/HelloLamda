@@ -60,6 +60,64 @@
           }
         }
       }
+    },
+    "HelloLamdaAnnotationsFunctionDeleteFunctionHandlerGenerated": {
+      "Type": "AWS::Serverless::Function",
+      "Metadata": {
+        "Tool": "Amazon.Lambda.Annotations",
+        "SyncedEvents": [
+          "RootDelete"
+        ]
+      },
+      "Properties": {
+        "Runtime": "dotnet8",
+        "CodeUri": ".",
+        "MemorySize": 512,
+        "Timeout": 30,
+        "Policies": [
+          "AWSLambdaBasicExecutionRole"
+        ],
+        "PackageType": "Zip",
+        "Handler": "HelloLamda.Annotations::HelloLamda.Annotations.Function_DeleteFunctionHandler_Generated::DeleteFunctionHandler",
+        "Events": {
+          "RootDelete": {
+            "Type": "HttpApi",
+            "Properties": {
+              "Path": "users/{userId}",
+              "Method": "DELETE"
+            }
+          }
+        }
+      }
+    },
+    "HelloLamdaAnnotationsFunctionGetAllFunctionHandlerGenerated": {
+      "Type": "AWS::Serverless::Function",
+      "Metadata": {
+        "Tool": "Amazon.Lambda.Annotations",
+        "SyncedEvents": [
+          "RootGet"
+        ]
+      },
+      "Properties": {
+        "Runtime": "dotnet8",
+        "CodeUri": ".",
+        "MemorySize": 512,
+        "Timeout": 30,
+        "Policies": [
+          "AWSLambdaBasicExecutionRole"
+        ],
+        "PackageType": "Zip",
+        "Handler": "HelloLamda.Annotations::HelloLamda.Annotations.Function_GetAllFunctionHandler_Generated::GetAllFunctionHandler",
+        "Events": {
+          "RootGet": {
+            "Type": "HttpApi",
+            "Properties": {
+              "Path": "users",
+              "Method": "GET"
+            }
+          }
+        }
+      }
     }
   }
 }

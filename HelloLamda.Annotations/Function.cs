@@ -33,12 +33,25 @@ public class Function
     }
 
     [LambdaFunction]
+    [HttpApi(LambdaHttpMethod.Get, "users")]
+    public async Task<List<User>> GetAllFunctionHandler(ILambdaContext context)
+    {
+        var conditions = new List<ScanCondition>();
+        return await _dynamoDbContext.ScanAsync<User>(conditions).GetRemainingAsync();
+    }
+
+    [LambdaFunction]
     [HttpApi(LambdaHttpMethod.Post, "users")]
     public async Task PostFunctionHandler([FromBody]User user, ILambdaContext context)
     {
         await _dynamoDbContext.SaveAsync<User>(user);
     }
 
-    //[LambdaFunction]
-    //[HttpApi(LambdaHttpMethod.Delete, "users/{userId}")]
+    [LambdaFunction]
+    [HttpApi(LambdaHttpMethod.Delete, "users/{userId}")]
+    public async Task DeleteFunctionHandler(string userId, ILambdaContext context)
+    {
+        Guid.TryParse(userId, out var id);
+        await _dynamoDbContext.DeleteAsync<User>(id);
+    }
 }
