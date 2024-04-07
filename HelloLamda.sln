@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloLamda", "HelloLamda\HelloLamda.csproj", "{34125B7A-DD56-4A47-BFB6-8825E33F2FD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloLamda.Annotations", "HelloLamda.Annotations\HelloLamda.Annotations.csproj", "{D8E55359-26B8-4A91-9AD2-11CD0B134AD8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloLamda.SQS", "HelloLamda.SQS\HelloLamda.SQS.csproj", "{DAA2FF0D-5707-42AB-8A15-EB28C6F4884C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloLamda.SNS-Triggers", "HelloLamda.SNS-Triggers\HelloLamda.SNS-Triggers.csproj", "{97189420-D9D1-4C29-9522-DDBEDC069D77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloLamda.LifeTimeCycle", "HelloLamda.LifeTimeCycle\HelloLamda.LifeTimeCycle.csproj", "{D89289B2-A48C-43CA-9CD1-00741E827643}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34125B7A-DD56-4A47-BFB6-8825E33F2FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34125B7A-DD56-4A47-BFB6-8825E33F2FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34125B7A-DD56-4A47-BFB6-8825E33F2FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34125B7A-DD56-4A47-BFB6-8825E33F2FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E55359-26B8-4A91-9AD2-11CD0B134AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E55359-26B8-4A91-9AD2-11CD0B134AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E55359-26B8-4A91-9AD2-11CD0B134AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E55359-26B8-4A91-9AD2-11CD0B134AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA2FF0D-5707-42AB-8A15-EB28C6F4884C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA2FF0D-5707-42AB-8A15-EB28C6F4884C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA2FF0D-5707-42AB-8A15-EB28C6F4884C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA2FF0D-5707-42AB-8A15-EB28C6F4884C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97189420-D9D1-4C29-9522-DDBEDC069D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97189420-D9D1-4C29-9522-DDBEDC069D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97189420-D9D1-4C29-9522-DDBEDC069D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97189420-D9D1-4C29-9522-DDBEDC069D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D89289B2-A48C-43CA-9CD1-00741E827643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89289B2-A48C-43CA-9CD1-00741E827643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89289B2-A48C-43CA-9CD1-00741E827643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89289B2-A48C-43CA-9CD1-00741E827643}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CAAD275-A595-44A5-B734-895D3D2D4A87}
+	EndGlobalSection
+EndGlobal
